@@ -112,8 +112,8 @@ We use the Tensorflow 19.10-py3 container for generating the UFF model for MaskR
 
 8.  Populate your `/data` folder with the following test images.
     ```
-    /usr/src/tensorrt/data/faster-rcnn/001763.ppm
-    /usr/src/tensorrt/data/faster-rcnn/004545.ppm
+    /tensorrt/data/faster-rcnn/001763.ppm
+    /tensorrt/data/faster-rcnn/004545.ppm
     ```
 
 ## Running the sample
@@ -122,7 +122,7 @@ Switch back to the TensorRT container/environment for running the sample.
 
 1.  Compile this sample by running `make` in the `<TensorRT root directory>/samples/sampleUffMaskRCNN` directory. The binary named `sample_uff_mask_rcnn` will be created in the `<TensorRT root directory>/bin` directory.
     ```
-    cd <TensorRT root directory>/samples/sampleUffMaskRCNN
+    cd /tensorrt/samples/sampleUffMaskRCNN
     make
     ```
 
