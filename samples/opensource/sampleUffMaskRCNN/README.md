@@ -58,11 +58,11 @@ The Pooling layer implements pooling within a channel. Supported pooling types a
 
 ## Generating UFF model
 
-We use the Tensorflow 19.10-py3 container for generating the UFF model for MaskRCNN.
+We use the Tensorflow 20.03-tf1-py3 container for generating the UFF model for MaskRCNN. (CUDA 10.2, CUDNN 7.6.5, TRT 7.0+)
 
-1.  Launch the 19.10-py3 tensorflow container.
+1.  Launch the 20.03-tf1-py3 tensorflow container.
     ```bash
-    docker run --rm -it --gpus all -v $TRT_SOURCE:/workspace/TensorRT -v $TRT_RELEASE:/tensorrt nvcr.io/nvidia/tensorflow:19.10-py3 /bin/bash
+    docker run --rm -it --gpus all -v $TRT_SOURCE:/workspace/TensorRT -v $TRT_RELEASE:/tensorrt nvcr.io/nvidia/tensorflow:20.03-tf1-py3 /bin/bash
     ```
 
 2.  Inside the container, install required packages alongwith UFF toolkit and graph surgeon.
